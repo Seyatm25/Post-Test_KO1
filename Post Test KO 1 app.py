@@ -53,7 +53,8 @@ with col2:
         "Pereaksi Schiff",
         "Natrium Bisulfit (NaHSO3)",
         "Hidroksilamin (NH2OH)",
-        "NaHCO3 + Uji Barit (Ba(OH)2)"
+        "NaHCO3 + Uji Barit (Ba(OH)2)",
+        "Uji Ceric Nitrat"
     ])
 
 # ================= LOGIKA DATABASE REAKSI =================
@@ -122,43 +123,4 @@ elif pereaksi == "Natrium Bisulfit (NaHSO3)":
     if senyawa in ["Formaldehida", "Aseton"]:
         hasil = "(+) Endapan Putih Kristalin"
         reaksi = "R₂C=O + NaHSO₃ → R₂C(OH)SO₃Na↓ (kristal putih)"
-        pembahasan = "Reaksi adisi nukleofilik pada gugus karbonil (aldehid/keton) membentuk garam bisulfit yang sukar larut."
-
-# 9. HIDROKSILAMIN
-elif pereaksi == "Hidroksilamin (NH2OH)":
-    if senyawa in ["Formaldehida", "Aseton"]:
-        hasil = "(+) Terbentuk Kristal Oksim"
-        reaksi = "R₂C=O + NH₂OH → R₂C=N-OH (Oksim) + H₂O"
-        pembahasan = "Gugus karbonil berkondensasi dengan hidroksilamin membentuk senyawa turunan oksim yang mengendap."
-
-# 10. NaHCO3 + UJI BARIT
-elif pereaksi == "NaHCO3 + Uji Barit (Ba(OH)2)":
-    if senyawa == "Asam Asetat":
-        hasil = "(+) Gelembung Gas & Air Barit Keruh (BaCO₃)"
-        reaksi = "1) CH₃COOH + NaHCO₃ → CH₃COONa + H₂O + CO₂↑ \n2) CO₂ + Ba(OH)₂ → BaCO₃↓ (keruh) + H₂O"
-        pembahasan = "Asam karboksilat melepaskan gas CO₂ saat ditambah NaHCO₃. Gas CO₂ ini bereaksi dengan uji barit menghasilkan endapan putih BaCO₃."
-
-
-# ================= KOTAK OUTPUT BERDERET =================
-st.write("---")
-
-st.markdown(f"""
-<div class="kotak">
-    <div class="label">Hasil (+)/(-)</div>
-    <p style="font-size: 1.1em; color: {'#d35400' if '(+)' in hasil else '#7f8c8d'};"><b>{hasil}</b></p>
-</div>
-""", unsafe_allow_html=True)
-
-st.markdown(f"""
-<div class="kotak">
-    <div class="label">Reaksi Kimia</div>
-    <p style="font-size: 1.1em; font-family: monospace; white-space: pre-wrap;">{reaksi}</p>
-</div>
-""", unsafe_allow_html=True)
-
-st.markdown(f"""
-<div class="kotak">
-    <div class="label">Pembahasan Singkat</div>
-    <p>{pembahasan}</p>
-</div>
-""", unsafe_allow_html=True)
+        pemb
