@@ -111,7 +111,7 @@ with tab1:
         if senyawa in ["Alkohol Primer", "Alkohol Sekunder", "Formaldehida"]:
             hasil = "(+) Warna berubah jingga menjadi hijau"
             reaksi = "Cr₂O₇²⁻ (jingga) + Senyawa → Cr³⁺ (hijau) + Hasil Oksidasi"
-            pembahasan = "✅ **Kenapa bereaksi:** Senyawa ini memiliki atom Hidrogen yang terikat pada atom Karbon pembawa gugus fungsi, sehingga dapat dioksidasi. Ion dikromat (jingga) tereduksi menjadi ion Cr³⁺ (hijau)."
+            pembahasan = "✅ **Kenapa ereaksi:** Senyawa ini memiliki atom Hidrogen yang terikat pada atom Karbon pembawa gugus fungsi, sehingga dapat dioksidasi. Ion dikromat (jingga) tereduksi menjadi ion Cr³⁺ (hijau)."
             is_positive = True
         elif senyawa == "Alkohol Tersier":
             pembahasan = "❌ **Kenapa TIDAK bereaksi:** Karbon yang mengikat gugus -OH pada alkohol tersier tidak memiliki atom hidrogen (hidrogen alfa) sama sekali, sehingga ikatan C-C harus diputus untuk oksidasi, yang mana tidak bisa dilakukan oleh dikromat."
